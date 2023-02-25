@@ -1,0 +1,173 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto 300px;
+    overflow-x: hidden;
+}
+
+.superior{
+    background-color: white;
+    display: inline-block;
+    width: 100vw;
+    height: 20px;
+    position: fixed;
+    z-index: 1;
+}
+header{
+    background-color: #2a4d7d;
+    width: 100vw;
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 110px auto 300px ;
+    align-items: center;
+}
+header h1{
+    color: white;
+    display: inline-block;
+    margin: auto 1%;
+}
+img {
+    width: 100px;
+    height: 100px;
+    padding: 10px 5px ;
+}
+
+button{
+    background-color: #dfe4ec;
+    justify-self: center;
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+}
+.fa-bars{
+    text-align: center;
+    font-size: 200%;
+    padding: 0;
+    margin: 0;
+}
+
+aside{
+    background-color: #dfe4ec;
+    position: fixed;
+    display: block;
+    width: 300px;
+    height: 100vh;
+    right: 0;
+    z-index: 5;
+    overflow-y: auto;
+}
+#aside_div{
+    position: relative;
+    top: 125px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 0;
+}
+.aside_div_section, .aside_div_section_contacto_1{
+    margin: 0;
+    padding: 0;
+}
+.aside_div_section_contacto_2{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#div_article{
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+}
+
+
+article{    
+    display: block;
+    padding: 1%;
+}
+section{
+    padding: 1%;
+}
+
+aside p i{
+    width: 8%;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    background-color: #2a4d7d;
+    border-radius: 100%;
+}
+
+.azul{
+    color: #2a4d7d;
+    font-weight: 1000;
+}
+
+.celeste{
+    color: #2a4d7d;
+}
+@media only screen and (max-width: 800px) {
+    
+    header{
+        grid-template-columns: 110px auto minmax(80px, auto);
+    }
+
+    @media only screen and (max-width: 700px) {
+        body{
+            grid-template-columns:  auto;
+        }
+        aside{
+            display: none;
+            position: absolute;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        #aside_div{
+            position: absolute;
+            top: 125px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+        }
+        .aside_div_section {
+            display: block;
+            margin: 0 auto;
+        }
+        .aside_div_section_contacto_2{
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            left: 4%
+        }
+        .aside_div_section_contacto_1{
+            display: none;
+        }
+
+        #div_article{
+            position: relative;
+            margin: 0 3%;
+            top: 120px;
+        }
+        @media only screen and (max-width: 338px) {
+            #aside_div{
+                top: 150px;
+            }
+
+            #div_article{
+                top: 145px;
+            }
+        }
+    }
+}

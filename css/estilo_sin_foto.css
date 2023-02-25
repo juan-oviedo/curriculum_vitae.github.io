@@ -1,0 +1,132 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.superior{
+    background-color: white;
+    display: inline-block;
+    width: 100vw;
+    height: 20px;
+    position: fixed;
+    z-index: 1;
+}
+header{
+    background-color: #2a4d7d;
+    width: 100vw;
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+}
+header h1{
+    color: white;
+}
+
+aside{
+    background-color: #dfe4ec;
+    display: inline-block;
+    height: 100vh;
+    z-index: 5;
+    position: fixed;
+    left: 20px;
+    padding: 0 .5%;
+    overflow-y: auto;
+}
+.aside_div{
+    position: relative;
+    top: 105px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+}
+.aside_div_section, .aside_div_section_contacto_1{
+    margin: 0;
+    padding: 0;
+}
+.aside_div_section_contacto_2{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.div_article{
+    display: inline-block;
+    position: absolute;
+    box-sizing: content-box;
+    height: 100%;
+    top: 100px;
+    left: 300px;
+}
+
+
+
+article{    
+    padding: 1%;
+    
+}
+section{
+    padding: 1%;
+}
+
+aside p i{
+    width: 8%;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    background-color: #2a4d7d;
+    border-radius: 100%;
+}
+
+.azul{
+    color: #2a4d7d;
+    font-weight: 1000;
+}
+
+.celeste{
+    color: #2a4d7d;
+}
+
+@media only screen and (max-width: 700px) {
+    aside{
+        position: static;
+        width: 100vw;
+        height: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .aside_div{
+        position: static;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .aside_div_section {
+        margin: 0 auto; 
+    }
+    .aside_div_section_contacto_2{
+        width: 100vw;
+        display: grid;
+        place-content: center;
+    }
+    .aside_div_section_contacto_1{
+        display: none;
+    }
+    .div_article{
+        position: static;
+        padding: 100px 0 0 0;
+    }
+    @media only screen and (max-width: 420px) {
+        .aside_div{
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 100%;
+            place-content: center;
+        }
+        .aside_div_section_contacto_2{
+            position: relative;
+            left: 4%
+        }
+    }
+}
