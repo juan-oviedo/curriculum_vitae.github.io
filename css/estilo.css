@@ -141,16 +141,11 @@ aside p i{
             display: grid;
             grid-template-columns: 100%;
         }
-        .aside_div_section {
+        .aside_div_section, .aside_div_section_contacto_2 {
             display: block;
             margin: 0 auto;
         }
-        .aside_div_section_contacto_2{
-            display: block;
-            margin: 0 auto;
-            position: relative;
-            left: 4%
-        }
+            
         .aside_div_section_contacto_1{
             display: none;
         }
