@@ -145,7 +145,11 @@ aside p i{
             display: block;
             margin: 0 auto;
         }
-            
+
+        div section h2{
+            text-align: center;
+        }
+
         .aside_div_section_contacto_1{
             display: none;
         }
