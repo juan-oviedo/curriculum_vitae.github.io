@@ -24,12 +24,14 @@ function fullwidthaside (){
         aside.style.display = 'none';
         div_article.style.display = 'block';
         aside_div.style.gridTemplateColumns = '50% 50%';
+        document.body.style.gridTemplateColumns = 'auto';
         
     }
     else{
         aside.style.display = 'block';
         div_article.style.display = 'none';
         aside_div.style.gridTemplateColumns = 'auto';
+        document.body.style.gridTemplateColumns = 'auto';
     }
 }
 

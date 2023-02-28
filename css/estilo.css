@@ -94,7 +94,7 @@ article{
     display: block;
     padding: 1%;
 }
-section{
+article section{
     padding: 1%;
 }
 
@@ -139,18 +139,18 @@ aside p i{
             top: 125px;
             width: 100%;
             display: grid;
-            grid-template-columns: 100%;
+
+            justify-items: center;
         }
-        .aside_div_section {
+        .aside_div_section, .aside_div_section_contacto_2 {
             display: block;
-            margin: 0 auto;
+            width: 245px;
         }
-        .aside_div_section_contacto_2{
-            display: block;
-            margin: 0 auto;
-            position: relative;
-            left: 4%
+
+        div section ul{
+            padding-inline-start: 20px;
         }
+
         .aside_div_section_contacto_1{
             display: none;
         }
